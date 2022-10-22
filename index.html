@@ -151,6 +151,14 @@
                 <div class="row justify-content-center">
                     <!-- Portfolio Items-->
                     <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal-4">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div><img class="img-fluid" src="assets/img/portfolio/LamterEngine.png" alt="Lamter Engine"/>
+                            <div><p class="text-secondary" style="margin-top:5px;">Console engine C++</p></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-5">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal-3">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
@@ -171,7 +179,7 @@
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div><img class="img-fluid" src="assets/img/portfolio/ItHasToBeYouCover.png" alt="It has to be you cover"/>
-                            <div><p class="text-secondary" style="margin-top:5px;"></p></div>
+                            <div><p class="text-secondary" style="margin-top:5px;">Our most ambitious game</p></div>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 mb-5">
@@ -221,6 +229,24 @@
                             </div><img class="img-fluid" src="assets/img/portfolio/pentagrammedCover.png" alt="Pentagrammed Cover"/>
                             <div><p class="text-secondary" style="margin-top:5px;">SD2Jam - Best Musical Game 🏆</p></div>
                         </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div><img class="img-fluid" src="assets/img/portfolio/timerDungeoneerCover.png" alt="Timer Dungeoneer Cover"/>
+                            <div><p class="text-secondary" style="margin-top:5px;">BrackeysJam 2020.2</p></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <a href="https://joanstark.itch.io/" target="_blank">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal7">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div><img class="img-fluid" src="assets/img/portfolio/MoreProjectsOn.jpg" alt="More projects on..."/>
+                            <div><p class="text-secondary" style="margin-top:5px;">More projects at Itch.io</p></div>
+                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -324,6 +350,91 @@
         </div>
 
         <!-- Portfolio Modal-->
+        <div class="portfolio-modal modal fade" id="portfolioModal-4" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal-4Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary mb-0">Lamter Engine</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <hr style="width:150px; height: 3px; margin-top: 0px;", size="3", color=#ffde5f>  
+                                    </div>
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5 text-secondary" style="text-align: left">
+                                    Game developed in C++. Uses a custom engine built for doing other console games. </br> 
+                                    You can download "SpaceShip_ConsoleGame.zip" to see the final sourcecode and play with the .exe </br> 
+                                    </br>
+                                    <b>Compatibility:</b> </br>
+                                    Due to changes in Windows 11 console, there's only compatibility with Windows 10 and Windows 7 </br>
+                                    </br>
+                                    <b>LamterEngine:</b> </br>
+                                    - Custom engine, with console buffer. Focused on getting rid of flickering and reducing drawcalls. </br>
+                                    - Custom Input system, similar to popular engines. (GetKeyDown, GetKeyUp, GetKey). </br>
+                                    - Custom time management, makes sure engine runs at X fps. </br>
+                                    - Component driven system, similar to Unity. </br>
+                                    - Collider component, and collision system. </br>
+                                    - Utility functions like GetGameObjectOfTypeByTag that returns a pointer to the object with a tag. </br>
+                                    - User only needs to write the main.cpp to make the engine run, without other tweekings. </br>
+                                    - Using read/write of xml with tinyxml12 with layer of abstraction. </br>
+                                    - (...) </br> 
+                                    </br>
+                                    <b>Game features:</b> </br>
+                                    - Free movement of ship. (8 axis) </br>
+                                    - 2 enemy types. </br>
+                                    - Different drawing speeds depending on the movement speed. </br>
+                                    - Customizable enemy spawn system: </br>
+                                        - Rounds </br> 
+                                        - Enemy groups and spawning times. (Allows creating patterns of enemies very fast). </br>
+                                        - Enemies: enemy type, delay between spawns, position, quantity. </br>
+                                    - Score saved between sessions. </br>
+                                    </p>
+                                    <a href="https://github.com/JoanOrtiga/SpaceShip_ConsoleGame" target="_blank"> <button class="btn btn-primary"><i class="fas fa-fw"></i>Download</button></a>
+                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal6Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary mb-0">Timer Dungeoneer</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <hr style="width:150px; height: 3px; margin-top: 0px;", size="3", color=#ffde5f>  
+                                    </div>
+                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="assets/img/portfolio/timerDungeoneerInside.jpg" alt="Timer Dungeoneer screenshot"/>
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5 text-secondary">Welcome...</br>
+                                        You are an slave who wakes up in an unknown dungeon. Scared as anyone would be, you try leaving that place. But when you start moving objects you find out something unexpected from the dungeon. 
+                                        </br>
+                                        There is a timer inside the room, and when it hits 0, everything goes back at starting place, but you. Play with time to scape out.
+                                        </br>
+                                        Welcome to Timer Dungeoneer...
+                                        <br/>
+                                    </p>
+                                    <a href="https://ladymarina.itch.io/dungeon-rewind" target="_blank"> <button class="btn btn-primary"><i class="fas fa-fw"></i>Download</button></a>
+                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="portfolio-modal modal fade" id="portfolioModal-3" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal0Label" aria-hidden="true">
             <div class="modal-dialog modal-xl" role="document">
                 <div class="modal-content">
@@ -435,8 +546,7 @@
                                     </div>
                                     <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="assets/img/portfolio/bondedInside.jpg" alt="Bonded"/>
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5 text-secondary">Our last and most ambicious project.
-                                        We tried to make an hyperrealistic enviroment in 1 week in order to see what we could do and put us to the limit. The result is an introspective space game where via dialogues and some interaction with the spaceship, you need to survive to 5 years of adrift</p>
+                                    <p class="mb-5 text-secondary">We tried to make an hyperrealistic enviroment in 1 week in order to see what we could do and put us to the limit. The result is an introspective space game where via dialogues and some interaction with the spaceship, you need to survive to 5 years of adrift</p>
                                         <a href="https://luckyclara.itch.io/bonded" target="_blank"> <button class="btn btn-primary"><i class="fas fa-fw"></i>Download</button></a>
                                         <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close</button>
                                 </div>
